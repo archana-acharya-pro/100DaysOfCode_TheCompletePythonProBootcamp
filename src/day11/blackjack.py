@@ -49,10 +49,12 @@ def play_game():
     user_score = -1
     is_game_over = False
 
-    for _ in range(2):
+    #  Deal a new card to user and computer
+    for _ in range(2): # Variable _ is not used in here. so named as _
         user_cards.append(deal_card())
         computer_cards.append(deal_card())
 
+    # user draws cards using this while loop
     while not is_game_over:
         user_score = calculate_score(user_cards)
         computer_score = calculate_score(computer_cards)
@@ -67,7 +69,8 @@ def play_game():
                 user_cards.append(deal_card())
             else:
                 is_game_over = True
-
+                
+    # Computer draws cards using this while loop
     while computer_score != 0 and computer_score < 17:
         computer_cards.append(deal_card())
         computer_score = calculate_score(computer_cards)
@@ -76,7 +79,7 @@ def play_game():
     print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
     print(compare(user_score, computer_score))
 
-
+# to continue with the game
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y":
     print("\n" * 20)
     play_game()
