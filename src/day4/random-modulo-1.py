@@ -3,7 +3,7 @@
 # Randomization & Lists
 
 import random as rd
-import module as my_module
+import modulo as my_module
 
 random_int = rd.randint(0, 100)
 print(rd.randint(0, 10))

@@ -27,6 +27,3 @@ print(3 * 3 + 3 / 3 - 3)
 
 print(3 * (3 + 3)/ 3 - 3)
 print("My age: " + str(12))
-
-
-/Users/archana_acharya/archana_acharya/Projects/PycharmProjects/PythonBootCampPro/100 Days of Code - The Complete Python Pro Bootcamp/Day 2/Mathematical Operations/solution.py
